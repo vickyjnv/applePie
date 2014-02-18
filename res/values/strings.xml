@@ -1,8 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">applePie</string>
+    <string name="app_name">Pit Scouting App</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="team_number">Team Number</string>
+    <string name="team_name">Team Name</string>
+    <string name="title_activity_text_place">Text Place</string>
+    <string name="position">Position</string>
+    <string-array name="positions">
+        <item>POSITION</item>
+        <item>Defense</item>
+        <item>Mid-Field</item>
+        <item>Offense</item>
+    </string-array>
+    <string-array name="drive_train">
+        <item >DRIVETRAIN</item>
+        <item >Mechanum</item>
+        <item >6 Wheel 2 Motor</item>
+        <item >4 Wheel 2 Motor</item>
+        <item >4 Wheel 4 Motor</item>
+        <item >Holonomic</item>
+        <item >Swerve</item>
+        <item >Other...</item>
+    </string-array>
+        <string name="defensive_arm">Defensive Arm</string>
+        <string name="can_shoot">Can Shoot</string>
 
 </resources>
