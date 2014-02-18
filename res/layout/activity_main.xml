@@ -6,25 +6,26 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context=".MainActivity" >
     
 
         
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/tNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_alignRight="@+id/editText1"
-        android:layout_below="@+id/editText1"
+        android:layout_alignLeft="@+id/tName"
+        android:layout_alignRight="@+id/tName"
+        android:layout_below="@+id/tName"
         android:ems="10"
         android:hint="@string/team_number"
         android:inputType="phone" 
         android:maxLength="4"/>
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/tName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -34,7 +35,7 @@
         android:inputType="text" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/continueButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -43,41 +44,141 @@
         android:onClick="nextScreen"
         android:text="Continue" />
 
+    <CheckBox
+        android:id="@+id/defensiveArm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/driveTrain"
+        android:layout_alignRight="@+id/driveTrain"
+        android:layout_below="@+id/driveTrain"
+        android:layout_marginTop="30dp"
+        android:background="#4c4cff"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/defensive_arm" />
+
+    <CheckBox
+        android:id="@+id/canShoot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/defensiveArm"
+        android:layout_alignRight="@+id/defensiveArm"
+        android:layout_below="@+id/defensiveArm"
+        android:layout_marginTop="30dp"
+        android:background="#4c4cff"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/can_shoot" />
+
+    <CheckBox
+        android:id="@+id/canGather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/canShoot"
+        android:layout_alignRight="@+id/canShoot"
+        android:layout_below="@+id/canShoot"
+        android:layout_marginTop="30dp"
+        android:background="#4c4cff"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/can_gather" />
+
+    <CheckBox
+        android:id="@+id/moveForward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hotGoal"
+        android:layout_alignRight="@+id/hotGoal"
+        android:layout_below="@+id/hotGoal"
+        android:layout_marginTop="30dp"
+        android:background="#4c4cff"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/move_forward" />
+
+    <CheckBox
+        android:id="@+id/trussShot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/moveForward"
+        android:layout_alignRight="@+id/moveForward"
+        android:layout_below="@+id/moveForward"
+        android:layout_marginTop="30dp"
+        android:background="#4c4cff"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/truss_shot" />
+
+    <CheckBox
+        android:id="@+id/passing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/trussShot"
+        android:layout_alignRight="@+id/trussShot"
+        android:layout_below="@+id/trussShot"
+        android:layout_marginTop="30dp"
+        android:background="#4c4cff"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/passing" />
+
     <Spinner
-        android:id="@+id/spinner1"
+        android:id="@+id/position"
         android:layout_width="160dp"
         android:layout_height="50dp"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/editText2"
-        android:background="#EE4000"
+        android:layout_below="@+id/tNumber"
+        android:layout_marginTop="22dp"
+        android:layout_toLeftOf="@+id/continueButton"
+        android:background="#ffdf32"
         android:entries="@array/positions"
         android:prompt="@string/position" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/driveTrain"
         android:layout_width="160dp"
         android:layout_height="50dp"
-        android:layout_alignLeft="@+id/spinner1"
-        android:layout_below="@+id/spinner1"
-        android:layout_marginTop="21dp"
+        android:layout_alignTop="@+id/position"
+        android:layout_toRightOf="@+id/continueButton"
+        android:background="#ffdf32"
         android:entries="@array/drive_train" />
 
     <CheckBox
-        android:id="@+id/checkBox1"
+        android:id="@+id/hotGoal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/spinner2"
-        android:layout_below="@+id/spinner2"
-        android:layout_marginTop="30dp"
-        android:text="@string/defensive_arm" />
+        android:layout_alignBaseline="@+id/defensiveArm"
+        android:layout_alignBottom="@+id/defensiveArm"
+        android:layout_alignLeft="@+id/position"
+        android:layout_alignRight="@+id/position"
+        android:background="#4c4cff"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/hot_goal" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/canCatch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/checkBox1"
-        android:layout_below="@+id/checkBox1"
-        android:layout_marginTop="24dp"
-        android:text="@string/can_shoot" />
+        android:layout_alignBaseline="@+id/passing"
+        android:layout_alignBottom="@+id/passing"
+        android:layout_alignLeft="@+id/canGather"
+        android:layout_alignRight="@+id/canGather"
+        android:background="#4c4cff"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/can_catch" />
+
+    <TextView
+        android:id="@+id/driverXP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passing"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/driver_experience"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <SeekBar
+        android:id="@+id/driverXPBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passing"
+        android:layout_alignRight="@+id/canCatch"
+        android:layout_below="@+id/driverXP"
+        android:layout_marginTop="30dp"
+        android:max="3"
+        android:thumb="@drawable/sam" />
 
 </RelativeLayout>

@@ -26,16 +26,30 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
+        public static final int sam=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f090007;
-        public static final int button1=0x7f090002;
-        public static final int checkBox1=0x7f090005;
-        public static final int checkBox2=0x7f090006;
-        public static final int editText1=0x7f090001;
-        public static final int editText2=0x7f090000;
-        public static final int spinner1=0x7f090003;
-        public static final int spinner2=0x7f090004;
+        public static final int action_settings=0x7f090014;
+        public static final int button1=0x7f090013;
+        public static final int canCatch=0x7f09000c;
+        public static final int canGather=0x7f090006;
+        public static final int canShoot=0x7f090005;
+        public static final int continueButton=0x7f090002;
+        public static final int defensiveArm=0x7f090003;
+        public static final int driveTrain=0x7f090004;
+        public static final int driverXP=0x7f09000d;
+        public static final int driverXPBar=0x7f09000e;
+        public static final int editText1=0x7f090010;
+        public static final int editText2=0x7f09000f;
+        public static final int hotGoal=0x7f090008;
+        public static final int moveForward=0x7f090007;
+        public static final int passing=0x7f09000a;
+        public static final int position=0x7f09000b;
+        public static final int seekBar1=0x7f090011;
+        public static final int tName=0x7f090001;
+        public static final int tNumber=0x7f090000;
+        public static final int textView1=0x7f090012;
+        public static final int trussShot=0x7f090009;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -48,13 +62,25 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
+        public static final int can_catch=0x7f05000f;
+        public static final int can_gather=0x7f050009;
         public static final int can_shoot=0x7f050008;
         public static final int defensive_arm=0x7f050007;
+        public static final int driver_experience=0x7f050010;
+        public static final int final_notes=0x7f050012;
+        public static final int final_rating=0x7f050013;
+        public static final int finish=0x7f050014;
         public static final int hello_world=0x7f050002;
+        public static final int herding=0x7f05000e;
+        public static final int hot_goal=0x7f05000a;
+        public static final int move_forward=0x7f05000b;
+        public static final int passing=0x7f05000d;
         public static final int position=0x7f050006;
         public static final int team_name=0x7f050004;
         public static final int team_number=0x7f050003;
         public static final int title_activity_text_place=0x7f050005;
+        public static final int truss_shot=0x7f05000c;
+        public static final int what_makes_you_special=0x7f050011;
     }
     public static final class style {
         /** 

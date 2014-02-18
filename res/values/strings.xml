@@ -26,5 +26,17 @@
     </string-array>
         <string name="defensive_arm">Defensive Arm</string>
         <string name="can_shoot">Can Shoot</string>
+        <string name="can_gather">Can Gather</string>
+        <string name="hot_goal">Hot Goal</string>
+        <string name="move_forward">Move Forward</string>
+        <string name="truss_shot">Truss Shot</string>
+        <string name="passing">Passing</string>
+        <string name="herding">Herding</string>
+        <string name="can_catch">Can Catch</string>
+        <string name="driver_experience">Driver Experience</string>
+        <string name="what_makes_you_special">What Makes You Special?</string>
+        <string name="final_notes">Final Notes</string>
+        <string name="final_rating">Final Rating</string>
+        <string name="finish">Finish</string>
 
 </resources>
