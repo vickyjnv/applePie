@@ -10,9 +10,13 @@ import android.os.Environment;
 public class fileWriter {
 	File file;
 	
-	public fileWriter(String s){
-		file = new File(Environment.getExternalStoragePublicDirectory(
-                Environment.DIRECTORY_DOWNLOADS), s + " Pit" );
+	public fileWriter(){
+		file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),  "Pit Scouting");
+		if(!file.exists()){
+			file.mkdir();
+			write("Team Number,Team Name,Position,Drive Train,Hot Goal,Move Forward,Truss Shot,Passing,Defensive Arm,Can Shoot,Can Gather,Can Catch,Driver XP,Overall Rating");
+		}
+		System.out.println("making file");
 	}
 	
 	public void write(String data){

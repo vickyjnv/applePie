@@ -26,11 +26,12 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
-        public static final int sam=0x7f020001;
+        public static final int mike=0x7f020001;
+        public static final int sam=0x7f020002;
     }
     public static final class id {
-        public static final int action_settings=0x7f090014;
-        public static final int button1=0x7f090013;
+        public static final int action_settings=0x7f090016;
+        public static final int button1=0x7f090015;
         public static final int canCatch=0x7f09000c;
         public static final int canGather=0x7f090006;
         public static final int canShoot=0x7f090005;
@@ -39,16 +40,18 @@ public final class R {
         public static final int driveTrain=0x7f090004;
         public static final int driverXP=0x7f09000d;
         public static final int driverXPBar=0x7f09000e;
-        public static final int editText1=0x7f090010;
-        public static final int editText2=0x7f09000f;
+        public static final int driverXPLabel=0x7f09000f;
+        public static final int editText1=0x7f090011;
+        public static final int editText2=0x7f090010;
         public static final int hotGoal=0x7f090008;
         public static final int moveForward=0x7f090007;
         public static final int passing=0x7f09000a;
         public static final int position=0x7f09000b;
-        public static final int seekBar1=0x7f090011;
+        public static final int ratingLabel=0x7f090014;
+        public static final int seekBar1=0x7f090012;
         public static final int tName=0x7f090001;
         public static final int tNumber=0x7f090000;
-        public static final int textView1=0x7f090012;
+        public static final int textView1=0x7f090013;
         public static final int trussShot=0x7f090009;
     }
     public static final class layout {
@@ -76,6 +79,8 @@ public final class R {
         public static final int move_forward=0x7f05000b;
         public static final int passing=0x7f05000d;
         public static final int position=0x7f050006;
+        public static final int rating_label=0x7f050016;
+        public static final int seek_bar=0x7f050015;
         public static final int team_name=0x7f050004;
         public static final int team_number=0x7f050003;
         public static final int title_activity_text_place=0x7f050005;

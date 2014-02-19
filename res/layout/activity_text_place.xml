@@ -55,11 +55,21 @@
         android:max="10"
         android:thumb="@drawable/sam" />
 
+    <TextView
+        android:id="@+id/ratingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/rating_label"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/seekBar1"
+        android:layout_below="@+id/ratingLabel"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:text="@string/finish" />

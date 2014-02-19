@@ -38,5 +38,7 @@
         <string name="final_notes">Final Notes</string>
         <string name="final_rating">Final Rating</string>
         <string name="finish">Finish</string>
+        <string name="seek_bar">0</string>
+        <string name="rating_label">0</string>
 
 </resources>
