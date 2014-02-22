@@ -9,49 +9,80 @@
     tools:context=".TextPlace" >
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/special"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_alignRight="@+id/editText1"
-        android:layout_below="@+id/editText1"
-        android:layout_marginTop="30dp"
+        android:layout_alignLeft="@+id/finalRatingBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/finalRatingBar"
+        android:layout_marginTop="10dp"
+        android:maxLines="4"
+        android:ems="10"
+        android:hint="@string/what_makes_you_special"
+        android:inputType="textMultiLine" />
+        
+    <EditText
+        android:id="@+id/finalNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/special"
+        android:layout_alignRight="@+id/special"
+        android:layout_below="@+id/special"
+        android:layout_marginTop="10dp"
+        android:maxLines="4"
         android:ems="10"
         android:hint="@string/final_notes"
         android:inputType="textMultiLine" />
 
-    <EditText
-        android:id="@+id/editText1"
+ 
+    
+    <TextView
+        android:id="@+id/driverXP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/seekBar1"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/seekBar1"
-        android:layout_marginTop="30dp"
-        android:ems="10"
-        android:hint="@string/what_makes_you_special"
-        android:inputType="textMultiLine" >
-
-        <requestFocus />
-    </EditText>
+        android:layout_below="@+id/finalNotes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/driver_experience"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <SeekBar
+        android:id="@+id/driverXPBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/driverXP"
+        android:layout_marginTop="10dp"
+        android:max="3"
+        android:thumb="@drawable/sam" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/driverXPLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText2"
+        android:layout_below="@+id/driverXPBar"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/seek_bar"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <TextView
+        android:id="@+id/finalRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/driverXPLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         android:text="@string/final_rating"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <SeekBar
-        android:id="@+id/seekBar1"
+        android:id="@+id/finalRatingBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
+        android:layout_below="@+id/finalRating"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:max="10"
         android:thumb="@drawable/sam" />
 
@@ -59,19 +90,19 @@
         android:id="@+id/ratingLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/seekBar1"
+        android:layout_below="@+id/finalRatingBar"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:text="@string/rating_label"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/finish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ratingLabel"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:text="@string/finish" />
 
 </RelativeLayout>

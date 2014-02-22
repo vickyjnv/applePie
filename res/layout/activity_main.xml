@@ -8,6 +8,12 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
+    
+     <View
+            android:id="@+id/anchor"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true" />
 
     <EditText
         android:id="@+id/tNumber"
@@ -33,16 +39,29 @@
         android:background="#FFFFFF"
         android:hint="@string/team_name"
         android:inputType="text" />
+    
+    <Spinner
+        android:id="@+id/position"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tNumber"
+        android:layout_toLeftOf="@+id/anchor"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:background="#ffdf32"
+        android:entries="@array/positions"
+        android:prompt="@string/position" />
 
-    <Button
-        android:id="@+id/continueButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="22dp"
-        android:onClick="nextScreen"
-        android:text="Continue" />
+    <Spinner
+        android:id="@+id/driveTrain"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tNumber"
+        android:layout_toRightOf="@+id/anchor"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:background="#ffdf32"
+        android:entries="@array/drive_train" />
 
     <CheckBox
         android:id="@+id/defensiveArm"
@@ -116,25 +135,7 @@
         android:gravity="center_vertical|center_horizontal"
         android:text="@string/passing" />
 
-    <Spinner
-        android:id="@+id/position"
-        android:layout_width="160dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/tNumber"
-        android:layout_marginTop="22dp"
-        android:layout_toLeftOf="@+id/continueButton"
-        android:background="#ffdf32"
-        android:entries="@array/positions"
-        android:prompt="@string/position" />
-
-    <Spinner
-        android:id="@+id/driveTrain"
-        android:layout_width="160dp"
-        android:layout_height="50dp"
-        android:layout_alignTop="@+id/position"
-        android:layout_toRightOf="@+id/continueButton"
-        android:background="#ffdf32"
-        android:entries="@array/drive_train" />
+    
 
     <CheckBox
         android:id="@+id/hotGoal"
@@ -160,35 +161,18 @@
         android:gravity="center_vertical|center_horizontal"
         android:text="@string/can_catch" />
 
-    <TextView
-        android:id="@+id/driverXP"
+    
+    
+    <Button
+        android:id="@+id/continueButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/passing"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:text="@string/driver_experience"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:layout_marginBottom="22dp"
+        android:onClick="nextScreen"
+        android:text="Continue" />
 
-    <SeekBar
-        android:id="@+id/driverXPBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/passing"
-        android:layout_alignRight="@+id/canCatch"
-        android:layout_below="@+id/driverXP"
-        android:layout_marginTop="30dp"
-        android:max="3"
-        android:thumb="@drawable/sam" />
-
-    <TextView
-        android:id="@+id/driverXPLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/driverXPBar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:text="@string/seek_bar"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
 
 </RelativeLayout>

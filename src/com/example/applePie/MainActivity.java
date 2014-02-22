@@ -11,7 +11,6 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.SeekBar;
-import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -24,32 +23,6 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-		
-		final TextView  label = (TextView) findViewById(R.id.driverXPLabel);
-		
-		SeekBar driverXP = (SeekBar)findViewById(R.id.driverXPBar);
-		
-		OnSeekBarChangeListener s = new OnSeekBarChangeListener()
-        {
-			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser)
-			{
-				
-				label.setText(String.valueOf(progress));
-			}
-			
-			public void onStartTrackingTouch(SeekBar seekBar)
-			{
-				// TODO Auto-generated method stub
-			}
-			
-			public void onStopTrackingTouch(SeekBar seekBar)
-			{
-				// TODO Auto-generated method stub
-			}
-		};
-		
-		driverXP.setOnSeekBarChangeListener(s);
-			
 	}
 	
 	@Override
@@ -78,7 +51,6 @@ public class MainActivity extends Activity {
 		CheckBox canGather = (CheckBox)findViewById(R.id.canGather);
 		CheckBox canCatch = (CheckBox)findViewById(R.id.canCatch);
 		
-		SeekBar driverXP = (SeekBar)findViewById(R.id.driverXPBar);
 		
 		addTo(tNumber.getEditableText().toString());
 		addTo(tName.getEditableText().toString());
@@ -92,7 +64,6 @@ public class MainActivity extends Activity {
 		addTo(canShoot.isChecked());
 		addTo(canGather.isChecked());
 		addTo(canCatch.isChecked());
-		addTo(driverXP.getProgress());
 		
 		f.write(total);
 		
