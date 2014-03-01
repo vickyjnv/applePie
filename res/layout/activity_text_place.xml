@@ -103,6 +103,7 @@
         android:layout_below="@+id/ratingLabel"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
+        android:onClick="finishWrite"
         android:text="@string/finish" />
 
 </RelativeLayout>

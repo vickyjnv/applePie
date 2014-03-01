@@ -9,6 +9,15 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
     
+      <CheckBox
+          android:id="@+id/jeremy"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="30dp"
+          android:onClick="love"
+          android:text="@string/jeremy"/>
+    
      <View
             android:id="@+id/anchor"
             android:layout_width="0dp"
@@ -17,29 +26,18 @@
 
     <EditText
         android:id="@+id/tNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/tName"
-        android:layout_alignRight="@+id/tName"
-        android:layout_below="@+id/tName"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/jeremy"
         android:ems="10"
         android:background="#FFFFFF"
         android:hint="@string/team_number"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:inputType="phone" 
         android:maxLength="4"/>
 
-    <EditText
-        android:id="@+id/tName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:background="#FFFFFF"
-        android:hint="@string/team_name"
-        android:inputType="text" />
-    
+  
     <Spinner
         android:id="@+id/position"
         android:layout_width="160dp"

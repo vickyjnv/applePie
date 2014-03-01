@@ -31,7 +31,7 @@ public final class R {
     }
     public static final class id {
         public static final int action_settings=0x7f090017;
-        public static final int anchor=0x7f090000;
+        public static final int anchor=0x7f090001;
         public static final int canCatch=0x7f09000c;
         public static final int canGather=0x7f090007;
         public static final int canShoot=0x7f090006;
@@ -46,13 +46,13 @@ public final class R {
         public static final int finalRatingBar=0x7f09000f;
         public static final int finish=0x7f090016;
         public static final int hotGoal=0x7f090009;
+        public static final int jeremy=0x7f090000;
         public static final int moveForward=0x7f090008;
         public static final int passing=0x7f09000b;
         public static final int position=0x7f090003;
         public static final int ratingLabel=0x7f090015;
         public static final int special=0x7f09000e;
-        public static final int tName=0x7f090002;
-        public static final int tNumber=0x7f090001;
+        public static final int tNumber=0x7f090002;
         public static final int trussShot=0x7f09000a;
     }
     public static final class layout {
@@ -77,6 +77,7 @@ public final class R {
         public static final int hello_world=0x7f050002;
         public static final int herding=0x7f05000e;
         public static final int hot_goal=0x7f05000a;
+        public static final int jeremy=0x7f050017;
         public static final int move_forward=0x7f05000b;
         public static final int passing=0x7f05000d;
         public static final int position=0x7f050006;
