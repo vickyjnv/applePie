@@ -86,8 +86,8 @@ public class TextPlace extends Activity {
 		if (extras != null) {
 			String dataOne = extras.getString("dataOne");
 			total += dataOne;
-			addTo(fixReturn(special.getEditableText().toString()));
-			addTo(fixReturn(notes.getEditableText().toString()));
+			addTo(fixReturnAndCommas(special.getEditableText().toString()));
+			addTo(fixReturnAndCommas(notes.getEditableText().toString()));
 			addTo(driverXP.getProgress());
 			addTo(finalBar.getProgress());
 			total += '\n';
@@ -115,8 +115,9 @@ public class TextPlace extends Activity {
 		toast.show();
 	}
 	
-	public String fixReturn(String s){
-		return s.replace("\n", "  ");
+	public String fixReturnAndCommas(String s){
+		s = s.replace("\n", "  ");
+		return s.replace(",", "/");
 	}
 
 }
